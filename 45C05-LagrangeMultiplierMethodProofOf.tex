@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LagrangeMultiplierMethodProofOf}
+\pmcreated{2013-03-22 15:25:09}
+\pmmodified{2013-03-22 15:25:09}
+\pmowner{aplant}{12431}
+\pmmodifier{aplant}{12431}
+\pmtitle{Lagrange multiplier method, proof of}
+\pmrecord{6}{37263}
+\pmprivacy{1}
+\pmauthor{aplant}{12431}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{45C05}
+\pmclassification{msc}{15A42}
+\pmclassification{msc}{15A18}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $g(x,y)=c$ and $f(x,y)=d$.  Taking the derivative of $f$ and $g$ with respect to $t$ gives:
+
+
+\begin{center}$\displaystyle\frac{\partial f}{\partial t}=\frac{\partial f}{\partial x}x'(t)+\frac{\partial f}{\partial y}y'(t)=0$\end{center}
+
+\begin{center}and\end{center}
+
+\begin{center}$\displaystyle\frac{\partial g}{\partial t}=\frac{\partial g}{\partial x}x'(t)+\frac{\partial g}{\partial y}y'(t)=0$\end{center}
+
+By letting $\vec{r}=x(t)\hat{i}+y(t)\hat{j},$ the partial derivatives can be rewritten as follows:
+
+\begin{center}$\displaystyle\frac{\partial f}{\partial t}=\operatorname{grad} f\cdot \vec{r'};$ \quad $\displaystyle\frac{\partial g}{\partial t}=\operatorname{grad} g\cdot \vec{r'}$\end{center}
+
+This implies that $\operatorname{grad} f \times \operatorname{grad} g = 0,$ thus $\operatorname{grad} f = \lambda \operatorname{grad} g.$  Now this equation can be rewritten as $f_x\hat{i}+f_y\hat{j}=\lambda\left(g_x\hat{i}+g_y\hat{j}\right).$  Since $\mathbb{R}^n\mapsto \mathbb{R},$ this equation can be separated into two new equations:
+
+\begin{center}$\displaystyle f_x=\lambda g_x;\quad f_y=\lambda g_y$\end{center}
+
+Using the above equations, a new function, $F$, can be defined:
+
+\begin{center}$\displaystyle F(x,y,\lambda)=f(x,y)-\lambda g(x,y)$\end{center}
+
+which can be generalized as:
+
+\begin{center}$\displaystyle F(x,y,\lambda)=f(x,y)-\sum_{i=1}^m \lambda_i\left[g_i(x,y)\right].$\end{center}
+%%%%%
+%%%%%
+\end{document}

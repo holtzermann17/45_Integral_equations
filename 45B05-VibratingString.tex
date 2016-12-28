@@ -1,0 +1,224 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{VibratingString}
+\pmcreated{2013-03-22 17:25:19}
+\pmmodified{2013-03-22 17:25:19}
+\pmowner{perucho}{2192}
+\pmmodifier{perucho}{2192}
+\pmtitle{vibrating string}
+\pmrecord{11}{39796}
+\pmprivacy{1}
+\pmauthor{perucho}{2192}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{45B05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\begin{document}
+\section{Introduction}
+
+D. Bernoulli (Op.Cit. in \cite{cite:Truesdell}) and Euler \cite{cite:Euler} were the first in studying, in more or less complete form, the transverse vibrations occurring in a string. The solution of the pertinent partial differential equation, in terms of arbitrary functions, is due to {\small{D}}'Alembert \cite{cite:D'Alembert}. Such studies, whose objective was to explain the vibratory phenomena, helped in great way to the establishment of the general principles of mechanics. In the last century,  were several the scientists who were dedicated to the researching about the vibratory phenomena that happens in an elastic string.  We can  mention a  few examples. Carrier \cite{cite:Carrier}, who got a solution of this problem by the method of perturbations. Fermi, Pasta and Ulam \cite{cite:Fermi}  from Princeton, studied the equipartition of energy on a discretized string's model. Also Zabusky \cite{cite:Zabusky}, by using the method of characteristics in partial differential equations of hyperbolic type, arrived to an equation whose solution had been obtained by Riemann \cite{cite:Riemann}  when he was researching the wave's propagation phenomena in an isentropic gas. \\ 
+
+Aside from the historical importance that has been attributed to the studies of vibrating string, it is not less relevant the fact than it has been the starting point in the researching of the vibratory phenomena that happens in cables; for instance, the case about  suspension bridges. \\
+
+Here we will make an elementary approach on vibrating string, via integral equations. {\footnote{For a solution via partial differential equations, see \PMlinkname{pahio: solving the wave equation due to D. Bernoulli}{SolvingTheWaveEquationByDBernoulli}.}}
+Next section is dedicated to the statement and hypotheses about the problem.
+
+\section{Restrictive hypotheses} 
+
+Let us consider a flexible and elastic string with length $l$ which obeys Hooke's law and it ends fixed at $x=0$ and $x=l$, under the following assumptions.
+\begin{enumerate}
+\item Weightless string.
+\item $d \ll l$, where $d$ is the string's diameter.
+\item It does not take into account the elastic properties of string's cross section.
+\item Transverse vibrations, i.e. the abscissa of string's points remaining unaltered.
+\item Small deformations, i.e. $y(x,t)\ll l$, $0\leq x\leq l$, $0\leq t < \infty$, where $y(x,t)$ is an arbitrary string's deflection.
+\item Tension on the string is uniform along it.
+\end{enumerate}
+
+\section{Green's function}
+
+We assume Cartesian coordinates with origin $O$ and $y>0$ downwards. At $t=0^-$, the string rests on $x$-axis at its natural undeformed length $\overline{OA}=l$. At $x=\xi$, is downward applied to the string a vertical load of magnitude $P$, so that the initial static deformed configuration of the string will correspond to the triangle $OAC$, at $t=0$. A free diagram of node $C$ and Newton's second law $\sum F_y = 0$, leads to {\footnote{From hypothesis 5., it is clear 
+
+that $\angle{AOC}=\theta\ll 1$, and $\angle{CAO}=\alpha\ll 1$. Thus,
+\begin{equation*}
+\sin\theta\thickapprox\tan\theta=\frac{\delta}{\xi}\,, \qquad \sin\alpha\thickapprox\tan\alpha=\frac{\delta}{l-\xi}\cdot
+\end{equation*}}}  
+\begin{equation*}
+T_0\frac{\delta}{\xi}+T_0\frac{\delta}{l-\xi}=P, \qquad \textrm{or} \qquad \delta=\frac{P\xi(l-\xi)}{T_0l}\,,
+\end{equation*}
+being $T_0$ the string's tension and $\delta$ the static deflection at $t=0$. \\
+Denoting by $Y(x)$ the arbitrary deflection at $x$, and from the \emph{prior} analysis, we obtain
+\begin{equation*}
+Y(x)=PG(x,\xi),
+\end{equation*} 
+where
+\begin{equation}
+\begin{cases}
+G(x,\xi)=\frac{x(l-\xi)}{T_0l}\,, \qquad 0\leq x\leq\xi, \\
+G(x,\xi)=\frac{(l-x)\xi}{T_0l}\,, \qquad \xi\leq x\leq l.
+\end{cases}
+\end{equation}
+This is the Green's function that we need. It is clear that $G(x,\xi)=G(\xi,x)$. Let us suppose that on the string acts a distributed force per unit length $p(\xi)$, then the force element on $(\xi,\xi+\delta\xi)$ it should be $p(\xi)\delta\xi$ and therefore, by the \emph{superposition principle}, the string takes the form
+\begin{equation*}
+Y(x)=\int_0^l G(x,\xi)p(\xi)d\xi.
+\end{equation*}
+\section{Discussion of cases}
+
+Following to Petrovski \cite{cite:Petrovski}, we will consider the following problems.
+\begin{enumerate}
+\item To find out the force's density distribution $p(\xi)$, under whose action the string takes a given form $Y=Y(x)$. Thus, we arrive to the integral equation of the first kind
+\begin{equation}
+Y(x)=\int_0^l G(x,\xi)p(\xi)d\xi
+\end{equation}
+respect to the unknown function $p(\xi)$.
+\item Let us suppose that on the string acts an exciter force with density, at $x=\xi$ and instant $t$, given by $p(\xi,t):=p(\xi)\sin\omega t$, being $\omega>0$ the angular frequency of the exciter force. Under its action, the string is putting in motion. Further, we will assume that the string's transverse oscillations are periodic, described by the equation
+\begin{equation*} 
+y(x,t)=Y(x)\sin\omega t.
+\end{equation*}
+Denoting by $\rho(\xi)$ the mass linear density at $x=\xi$, from the {\small{D}}'Alambert principle {\footnote{i.e.
+\begin{equation*}
+\sum F_yd\xi+\left\{-\rho(\xi)\frac{\partial^2 y}{\partial t^2}(\xi,t)d\xi\right\}\equiv 0,
+\end{equation*}
+a \emph{dynamical equilibrium} where the second term is the involved \emph{inertia force}. It is very important realize that in order to represents the solution $y(x,t)$ through an integral equation, it is necessary to explicit the exciter force $p(\xi)\sin\omega t$. Thus, $\sum F_y=\sum F'_y+p(\xi)\sin\omega t$. One also realizes that $\partial^2 y/\partial t^2$ may be obtained from the assumption above expressed for $x=\xi$. Hence the solution becomes
+\begin{equation*}
+y(x,t)=Y(x)\sin\omega t=\int_0^l G(x,\xi)\left\{-\sum F'_y \right\}d\xi.
+\end{equation*}
+Minus sign, above placed, it is conventional as the string's tension balance (because the tension applied at the ends of string's free diagram) is assumed upwards and, obviously, $y(x,t)$ is changing periodically of sign. }} 
+applied to the string's segment $(\xi,\xi+\delta\xi)$, at instant $t$, we have
+\begin{equation*}
+y(x,t)=Y(x)\sin\omega t=\int_0^l G(x,\xi) \{p(\xi)\sin\omega t+\omega^2\rho(\xi)Y(\xi)\sin\omega t\}d\xi.
+\end{equation*}
+Simplifying by $\sin\omega t$ and defining
+\begin{equation*}
+f(x):=\int_0^l G(x,\xi)p(\xi)d\xi, \qquad K(x,\xi):=\rho(\xi)G(x,\xi), \qquad \lambda:=\omega^2,
+\end{equation*}
+we get
+\begin{equation}
+Y(x)=\lambda\int_0^l K(x,\xi)Y(\xi)d\xi+f(x).
+\end{equation}
+\end{enumerate}
+Supposing known  the function $p(\xi)$ and, therefore $f(x)$, we arrive on this manner to a Fredholm's integral equation of the second kind for determination of the function $Y(x)$. Note that, by virtue of the definition of $f(x)$, we have $f(0)=f(l)=0$. \\
+Wether the density $\rho(\xi)$ is constant and $f(x)$ is \emph{regular} {\footnote{i.e. $f(x)\in \mathcal{C}^2[0\,,l] $.}}, it is not too hard solving this integral equation. In fact, from (1) and the definition of the symmetric kernel $K(x,\xi)$, results
+\begin{equation*}
+Y(x)=\omega^2\rho\int_0^x \frac{(l-x)\xi}{T_0l}Y(\xi)d\xi+
+\omega^2\rho\int_x^l \frac{x(l-\xi)}{T_0l}Y(\xi)d\xi+f(x)
+\end{equation*}
+or
+\begin{equation*}
+Y(x)=\frac{\omega^2c}{l}(l-x)\int_0^x \xi Y(\xi)d\xi+
+\frac{\omega^2cx}{l}\int_x^l (l-\xi)Y(\xi)d\xi+f(x),
+\end{equation*}
+Where $c=\rho/T_0$. By twice differentiation respect to $x$, we obtain (by application of Liebnitz's rule)
+\begin{equation}
+Y''(x)=-\omega^2cY(x)+f''(x).
+\end{equation}
+On the other hand, it can be shown that any solution of the differential equation (4), which vanishes for $x=0$ and $x=l$, it is also solution of the integral equation (3). To see this, we multiply the equation
+\begin{equation*}
+Y''(\xi)=-\omega^2cY(\xi)+f''(\xi)
+\end{equation*}
+by $-T_0G(x,\xi)$ and integrating respect to $\xi$ from $\xi=0$ to $\xi=l$. Then (3) is obtained since, integrating by parts, it is easily shown that
+\begin{equation*}
+\int_0^l T_0G(x,\xi)U''(\xi)d\xi=-U(x),
+\end{equation*}
+where $U(x)$ is any regular function, such that $U(0)=U(l)=0$. 
+From the theory on ordinary differential equations, the general solution of (4) has the form
+\begin{equation*}
+Y(x)=C_1\sin\mu x+C_2\cos\mu x+\frac{1}{\mu}\int_0^x f''(\xi)\sin\mu(x-\xi)d\xi,
+\end{equation*}
+Where $\mu=\omega\sqrt{c}$ and $C_1,C_2$ are arbitrary constants. From (1) and (3) is deduced that $Y(0)=Y(l)=0$. By making use of these conditions, and whenever $\sin\mu l\neq 0$, we have
+\begin{equation}
+Y(x)=-\frac{1}{\mu}\frac{\sin\mu x}{\sin\mu l}\int_0^l f''(\xi)\sin\mu(l-\xi)d\xi+
+\frac{1}{\mu}\int_0^x f''(\xi)\sin\mu(x-\xi)d\xi.
+\end{equation}
+In this case, (3) possesses a unique solution for any function $f(x)$, whenever it be regular and $f(0)=f(l)=0$. \\
+It can be shown that for the existence of the solution of integral equation (3) is sufficient, if $\sin\mu l\neq 0$, that the function $f(x)$ be continuous, so that the condition about existence and, with more reason, about that $f''(x)$ be continuous, is superfluous. On the contrary,  condition $\sin\mu l\neq 0$ is absolutely essential in order to that the integral equation has solution for any function $f(x)$; moreover, for all function $f(x)$ differentiable any number of times. \\
+In the case that $\sin\mu l=0$, then
+\begin{equation}
+\mu=\frac{k\pi}{l}\,, \qquad \omega=\frac{k\pi}{l\sqrt{c}}\,, \qquad 
+\lambda=\frac{k^2\pi^2}{l^2c}\,,
+\end{equation}
+where $k\in\mathbb{Z}$. The values of $\lambda$, given in $(6)_3$ for $k\in\mathbb{Z}^+$, are the eigenvalues of integral equation (3), and the corresponding values of $\omega$ in $(6)_2$, are the \emph{eigenfrequencies} of string's oscillations. From (5) and $f(x)$ being regular, as $\sin\mu l=0$ one realizes that the integral equation (3) has solution only if
+\begin{equation}
+\int_0^l f''(\xi)\sin\mu(l-\xi)d\xi=0.
+\end{equation}
+Integrating by parts and by making use of the fact that  $\sin\mu(l-\xi)=0$ and $f(\xi)=0$ for $\xi=0$ and $\xi=l$, condition (7) becomes {\footnote{From (8) one sees that indeed, condition for $f(x)$, may be weakened to $f(x)\in\mathcal{PC}[0\,,l]$.}} 
+\begin{equation}
+\int_0^l f(\xi)\sin\mu(l-\xi)d\xi=0.
+\end{equation}  
+Reciprocally, it is easy to show that condition (8) is also sufficient for the existence of a solution of integral equation (3) for any $\mu$ for which $\sin\mu l=0$. In particular, condition  (8) is satisfied if $f(x)\equiv 0$. Then, the integral equation (3) and the differential equation (4) become homogeneous. Consequently, all the solutions of  the homogeneous differential equation
+\begin{equation*}
+ Y''(\xi)+\omega^2cY(\xi)=0
+\end{equation*}
+vanish for $x=0$ and $x=l$ and therefore, all the solutions of the homogeneous integral equation (indeed a Fredholm's integral of the first kind)
+\begin{equation*}
+ Y(x)=\lambda\int_0^l K(x,\xi)Y(\xi)d\xi
+\end{equation*}
+are given by
+\begin{equation}
+Y(x)\,\, \mapsto \,\, Y_k(x)=C\sin\mu_kx,
+\end{equation}
+Where $C$ is an arbitrary constant and $\mu_k$ is one of the numbers $(6)_1$. Equation (9) give us the amplitude, at the point $x$, of the string's free vibrations, that is
+\begin{equation}
+y_k(x,t)=C\sin\mu_kx\sin\omega_kt,
+\end{equation}
+which takes place without the action of external exciter forces. As it has been seen so far, these oscillations do not take place with any frequency, but solely of one of the given in $(6)_2$ for $k\in\mathbb{Z}^+$. \\
+As it is shown in (5), if condition (7) (or equivalently (8)) does not satisfied, then the amplitude $Y(x)$ of string's periodic oscillations, at the point $x$, will increase indefinitely as the exciter's force frequency $\omega$ yields to  one of the string's eigenfrequencies (or string's natural frequencies). At limit, as these frequencies coincide, begins the \emph{resonance}. Thus, in general, there are not periodic oscillations on the string. Accordingly, in general, there is not solution for the non-homogeneous integral equation (3), as $\lambda$ is one of the eigenvalues of this equation. \\
+A more elaborated discussion (which takes into account string's cross section properties), not for Hookean elastic but Maxwellian viscoelastic string's model, is given in \cite{cite:perucho}.
+
+\begin{thebibliography}{1}
+\bibitem{cite:Truesdell}
+C. Truesdell, {\em Essays in the History of Mechanics}, pp. 108-110, Springer-Verlag, Berlin-Heidelberg-New York, 1968.
+\bibitem{cite:Euler}
+L. Euler, {\em Mechanica sive motus scientis analytice exposita}, 2 tomes={\em Opera Omnia II}, 1 and 2, Petropoli, 1736.
+\bibitem{cite:D'Alembert}
+J. L. {\small{D}}'Alembert, {\em Sur la Corde Vibrante}, Memoires de l'Acad\'emic des Sciences, 216ff., Berlin, 1747.
+\bibitem{cite:Carrier}
+G. F. Carrier, {\em On the non-linear vibration problem of the elastic String}, Quart. Appl. Math., $\underline{3}$, 157, 1945.
+\bibitem{cite:Fermi}
+E. Fermi, J. R. Pasta, S. Ulam, {\em Studies of Non-linear Problems I}, Los Alamos, Report $N^o$ 1940, May 1955. (Unpublished)
+\bibitem{cite:Zabusky}
+N. J. Zabusky, {\em Exact Solution for the Vibrations of a Nonlinear Continuous Model String}, J. Math., Phys., $\underline{3}$, 1028, 1962.
+\bibitem{cite:Riemann}
+G. F. B. Riemann, {\em Uber die fortpflanzung ebener Luftwellen von endlicher Schwingungsweite}, Abhandl., Konigl.Ges.Wiss. G\"ottingen, $\underline{8}$, 43, 1860.
+\bibitem{cite:Petrovski}
+I. G. Petrovski, {\em Lecciones de Teor\'ia de las Ecuaciones Integrales}, 2da. ed., Trad. de la 3era. ed. Rusa, Edit. MIR, Mosc\'u, 1976.
+\bibitem{cite:perucho}
+P. Fern\'andez, {\em Soluci\'on Exacta para las Vibraciones transversales en un modelo de Cable No-Hookeano}, Trabajo de Ascenso a Prof. Agregado, UCV, Caracas, 1985.  
+\end{thebibliography}   
+   
+
+
+
+
+
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IntegralEquation}
+\pmcreated{2013-03-22 18:03:57}
+\pmmodified{2013-03-22 18:03:57}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{integral equation}
+\pmrecord{8}{40598}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{45D05}
+\pmclassification{msc}{45A05}
+\pmrelated{Equation}
+\pmdefines{linear integral equation}
+\pmdefines{Volterra equation}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+An {\em integral equation} involves an unknown function under the \PMlinkescapetext{integral sign}.\, Most common of them is a {\em linear integral equation}
+\begin{align}
+\alpha(t)\,y(t)+\!\int_a^bk(t,\,x)\,y(x)\,dx = f(t),
+\end{align}
+where $\alpha,\,k,\,f$ are given functions.\, The function\, $t \mapsto y(t)$\, is to be solved.
+
+Any linear integral equation is \PMlinkname{equivalent}{Equivalent3} to a linear differential equation; e.g. the equation\, $\displaystyle y(t)\!+\!\int_0^t(2t-2x-3)\,y(x)\,dx = 1+t-4\sin{t}$\, to the equation\, $y''(t)-3y'(t)+2y(t) = 4\sin{t}$\, with the initial conditions \,$y(0) = 1$\, and\, $y'(0) = 0$.\\
+
+The equation (1) is of
+\begin{itemize}
+\item {\em 1st kind} if\, $\alpha(t) \equiv 0$,
+\item {\em 2nd kind} if $\alpha(t)$ is a nonzero constant,
+\item {\em 3rd kind} else.
+\end{itemize}
+
+If both \PMlinkname{limits}{UpperLimit} of integration in (1) are constant, (1) is a {\em Fredholm equation}, if one limit is variable, one has a {\em Volterra equation}.\, In the case that\, $f(t) \equiv 0$,\, the linear integral equation is \PMlinkescapetext{{\em homogeneous}}.\\
+
+\textbf{Example.}\, Solve the Volterra equation\, $\displaystyle y(t)\!+\!\int_0^t(t\!-\!x)\,y(x)\,dx = 1$\, by using Laplace transform.
+
+Using the \PMlinkname{convolution}{LaplaceTransformOfConvolution}, the equation may be written\, $y(t)+t*y(t) = 1$.\, Applying to this the Laplace transform, one obtains\, $\displaystyle Y(s)+\frac{1}{s^2}Y(s) = \frac{1}{s}$,\, whence\, $\displaystyle Y(s) = \frac{s}{s^2+1}$.\, This corresponds the function \,$y(t) = \cos{t}$,\, which is the solution.\\
+
+
+
+\PMlinkexternal{Solutions on some integral equations}{http://eqworld.ipmnet.ru/en/solutions/ie.htm} in EqWorld.
+%%%%%
+%%%%%
+\end{document}

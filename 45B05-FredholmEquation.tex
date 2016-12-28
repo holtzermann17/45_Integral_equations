@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FredholmEquation}
+\pmcreated{2013-03-22 15:49:59}
+\pmmodified{2013-03-22 15:49:59}
+\pmowner{ncrom}{8997}
+\pmmodifier{ncrom}{8997}
+\pmtitle{Fredholm equation}
+\pmrecord{5}{37805}
+\pmprivacy{1}
+\pmauthor{ncrom}{8997}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{45B05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A \textbf{Fredholm equation of the first kind} is an integral equation of the form
+\[
+\int_{a}^{b} K(x,y) f(y) dy = g(x), \quad \forall x \in [a,b],
+\]
+and a \textbf{Fredholm equation of the second kind} is an integral equation of the form
+\[
+f(x) - \lambda\int_{a}^{b} K(x,y)f(y)dy = g(x), \quad \forall x \in [a, b],
+\]
+where
+\[
+Kf(x) = \int_{a}^{b} K(x,y)f(y)dy, \quad \forall x \in [a, b]
+\]
+is a compact operator in some function space.
+%%%%%
+%%%%%
+\end{document}
