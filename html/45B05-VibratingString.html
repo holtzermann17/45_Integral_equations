@@ -1,0 +1,522 @@
+<!DOCTYPE html><html>
+<head>
+<title>vibrating string</title>
+<!--Generated on Fri Feb  9 21:33:55 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">vibrating string</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">D. Bernoulli (Op.Cit. in <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="" class="ltx_ref">1</a>]</cite>) and Euler <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="" class="ltx_ref">2</a>]</cite> were the first in studying, in more or less complete form, the transverse vibrations occurring in a string. The solution of the pertinent partial differential equation, in terms of arbitrary functions, is due to <span class="ltx_text" style="font-size:90%;">D</span>’Alembert <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib3" title="" class="ltx_ref">3</a>]</cite>. Such studies, whose objective was to explain the vibratory phenomena, helped in great way to the establishment of the general principles of mechanics. In the last century, were several the scientists who were dedicated to the researching about the vibratory phenomena that happens in an elastic string. We can mention a few examples. Carrier <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib4" title="" class="ltx_ref">4</a>]</cite>, who got a solution of this problem by the method of perturbations. Fermi, Pasta and Ulam <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib5" title="" class="ltx_ref">5</a>]</cite> from Princeton, studied the equipartition of energy on a discretized string’s model. Also Zabusky <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib6" title="" class="ltx_ref">6</a>]</cite>, by using the method of characteristics in partial differential equations of hyperbolic type, arrived to an equation whose solution had been obtained by Riemann <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib7" title="" class="ltx_ref">7</a>]</cite> when he was researching the wave’s propagation phenomena in an isentropic gas. 
+<br class="ltx_break"></p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">Aside from the historical importance that has been attributed to the studies of vibrating string, it is not less relevant the fact than it has been the starting point in the researching of the vibratory phenomena that happens in cables; for instance, the case about suspension bridges. 
+<br class="ltx_break"></p>
+</div>
+<div id="S1.p3" class="ltx_para">
+<p class="ltx_p">Here we will make an elementary approach on vibrating string, via integral equations. <span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>For a solution via partial differential equations, see pahio: solving the wave equation due to D. Bernoulli (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/SolvingTheWaveEquationByDBernoulli</span>).</span></span></span>
+Next section is dedicated to the statement and hypotheses about the problem.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Restrictive hypotheses</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">Let us consider a flexible and elastic string with length <math id="S2.p1.m1" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math> which obeys Hooke’s law and it ends fixed at <math id="S2.p1.m2" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="S2.p1.m3" class="ltx_Math" alttext="x=l" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>l</mi></mrow></math>, under the following assumptions.</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">1.</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Weightless string.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">2.</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="d\ll l" display="inline"><mrow><mi>d</mi><mo>≪</mo><mi>l</mi></mrow></math>, where <math id="I1.i2.p1.m2" class="ltx_Math" alttext="d" display="inline"><mi>d</mi></math> is the string’s diameter.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">3.</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">It does not take into account the elastic properties of string’s cross section.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">4.</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Transverse vibrations, i.e. the abscissa of string’s points remaining unaltered.</p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">5.</span> 
+<div id="I1.i5.p1" class="ltx_para">
+<p class="ltx_p">Small deformations, i.e. <math id="I1.i5.p1.m1" class="ltx_Math" alttext="y(x,t)\ll l" display="inline"><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≪</mo><mi>l</mi></mrow></math>, <math id="I1.i5.p1.m2" class="ltx_Math" alttext="0\leq x\leq l" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>l</mi></mrow></math>, <math id="I1.i5.p1.m3" class="ltx_Math" alttext="0\leq t&lt;\infty" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>t</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>, where <math id="I1.i5.p1.m4" class="ltx_Math" alttext="y(x,t)" display="inline"><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> is an arbitrary string’s deflection.</p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">6.</span> 
+<div id="I1.i6.p1" class="ltx_para">
+<p class="ltx_p">Tension on the string is uniform along it.</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Green’s function</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">We assume Cartesian coordinates with origin <math id="S3.p1.m1" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math> and <math id="S3.p1.m2" class="ltx_Math" alttext="y&gt;0" display="inline"><mrow><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow></math> downwards. At <math id="S3.p1.m3" class="ltx_Math" alttext="t=0^{-}" display="inline"><mrow><mi>t</mi><mo>=</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></math>, the string rests on <math id="S3.p1.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis at its natural undeformed length <math id="S3.p1.m5" class="ltx_Math" alttext="\overline{OA}=l" display="inline"><mrow><mover accent="true"><mrow><mi>O</mi><mo>⁢</mo><mi>A</mi></mrow><mo>¯</mo></mover><mo>=</mo><mi>l</mi></mrow></math>. At <math id="S3.p1.m6" class="ltx_Math" alttext="x=\xi" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>ξ</mi></mrow></math>, is downward applied to the string a vertical load of magnitude <math id="S3.p1.m7" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>, so that the initial static deformed configuration of the string will correspond to the triangle <math id="S3.p1.m8" class="ltx_Math" alttext="OAC" display="inline"><mrow><mi>O</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>C</mi></mrow></math>, at <math id="S3.p1.m9" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>. A free diagram of node <math id="S3.p1.m10" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> and Newton’s second law <math id="S3.p1.m11" class="ltx_Math" alttext="\sum F_{y}=0" display="inline"><mrow><mrow><mo largeop="true" symmetric="true">∑</mo><msub><mi>F</mi><mi>y</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow></math>, leads to <span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>From hypothesis 5., it is clear
+that <math id="S3.p1.m12" class="ltx_Math" alttext="\angle{AOC}=\theta\ll 1" display="inline"><mrow><mrow><mi mathvariant="normal">∠</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>O</mi><mo>⁢</mo><mi>C</mi></mrow><mo>=</mo><mi>θ</mi><mo>≪</mo><mn>1</mn></mrow></math>, and <math id="S3.p1.m13" class="ltx_Math" alttext="\angle{CAO}=\alpha\ll 1" display="inline"><mrow><mrow><mi mathvariant="normal">∠</mi><mo>⁢</mo><mi>C</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>O</mi></mrow><mo>=</mo><mi>α</mi><mo>≪</mo><mn>1</mn></mrow></math>. Thus,
+
+<span id="S3.Ex1" class="ltx_equation ltx_eqn_table">
+
+<span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex1.m1" class="ltx_Math" alttext="\sin\theta\thickapprox\tan\theta=\frac{\delta}{\xi}\,,\qquad\sin\alpha%
+\thickapprox\tan\alpha=\frac{\delta}{l-\xi}\cdot" display="block"><mrow><mi>sin</mi><mi>θ</mi><mo>≈</mo><mi>tan</mi><mi>θ</mi><mo>=</mo><mpadded width="+1.7pt"><mfrac><mi>δ</mi><mi>ξ</mi></mfrac></mpadded><mo rspace="22.5pt">,</mo><mi>sin</mi><mi>α</mi><mo>≈</mo><mi>tan</mi><mi>α</mi><mo>=</mo><mfrac><mi>δ</mi><mrow><mi>l</mi><mo>-</mo><mi>ξ</mi></mrow></mfrac><mo>⋅</mo></mrow></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span></span>
+</span></span></span></span>
+</p>
+<table id="S3.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex2.m1" class="ltx_Math" alttext="T_{0}\frac{\delta}{\xi}+T_{0}\frac{\delta}{l-\xi}=P,\qquad\textrm{or}\qquad%
+\delta=\frac{P\xi(l-\xi)}{T_{0}l}\,," display="block"><mrow><mrow><mrow><mrow><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>⁢</mo><mfrac><mi>δ</mi><mi>ξ</mi></mfrac></mrow><mo>+</mo><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>⁢</mo><mfrac><mi>δ</mi><mrow><mi>l</mi><mo>-</mo><mi>ξ</mi></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo rspace="22.5pt">,</mo><mtext>or</mtext></mrow></mrow><mo mathvariant="italic" separator="true">  </mo><mrow><mi>δ</mi><mo>=</mo><mpadded width="+1.7pt"><mfrac><mrow><mi>P</mi><mo>⁢</mo><mi>ξ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>⁢</mo><mi>l</mi></mrow></mfrac></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">being <math id="S3.p1.m14" class="ltx_Math" alttext="T_{0}" display="inline"><msub><mi>T</mi><mn>0</mn></msub></math> the string’s tension and <math id="S3.p1.m15" class="ltx_Math" alttext="\delta" display="inline"><mi>δ</mi></math> the static deflection at <math id="S3.p1.m16" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>. 
+<br class="ltx_break">Denoting by <math id="S3.p1.m17" class="ltx_Math" alttext="Y(x)" display="inline"><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> the arbitrary deflection at <math id="S3.p1.m18" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, and from the <em class="ltx_emph ltx_font_italic">prior</em> analysis, we obtain</p>
+<table id="S3.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex3.m1" class="ltx_Math" alttext="Y(x)=PG(x,\xi)," display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="S3.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.E1.m1" class="ltx_Math" alttext="\begin{cases}G(x,\xi)=\frac{x(l-\xi)}{T_{0}l}\,,\qquad 0\leq x\leq\xi,\\
+G(x,\xi)=\frac{(l-x)\xi}{T_{0}l}\,,\qquad\xi\leq x\leq l.\end{cases}" display="block"><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mrow><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mpadded width="+1.7pt"><mstyle displaystyle="false"><mfrac><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>⁢</mo><mi>l</mi></mrow></mfrac></mstyle></mpadded></mrow><mo rspace="22.5pt">,</mo><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>ξ</mi></mrow></mrow><mo>,</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mrow><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mpadded width="+1.7pt"><mstyle displaystyle="false"><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ξ</mi></mrow><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>⁢</mo><mi>l</mi></mrow></mfrac></mstyle></mpadded></mrow><mo rspace="22.5pt">,</mo><mrow><mi>ξ</mi><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>l</mi></mrow></mrow><mo>.</mo></mrow></mtd><mtd></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This is the Green’s function that we need. It is clear that <math id="S3.p1.m19" class="ltx_Math" alttext="G(x,\xi)=G(\xi,x)" display="inline"><mrow><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Let us suppose that on the string acts a distributed force per unit length <math id="S3.p1.m20" class="ltx_Math" alttext="p(\xi)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, then the force element on <math id="S3.p1.m21" class="ltx_Math" alttext="(\xi,\xi+\delta\xi)" display="inline"><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo>,</mo><mrow><mi>ξ</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></math> it should be <math id="S3.p1.m22" class="ltx_Math" alttext="p(\xi)\delta\xi" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mi>ξ</mi></mrow></math> and therefore, by the <em class="ltx_emph ltx_font_italic">superposition principle</em>, the string takes the form</p>
+<table id="S3.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex4.m1" class="ltx_Math" alttext="Y(x)=\int_{0}^{l}G(x,\xi)p(\xi)d\xi." display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>Discussion of cases</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">Following to Petrovski <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib8" title="" class="ltx_ref">8</a>]</cite>, we will consider the following problems.</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">1.</span> 
+<div id="I2.i1.p1" class="ltx_para">
+<p class="ltx_p">To find out the force’s density distribution <math id="I2.i1.p1.m1" class="ltx_Math" alttext="p(\xi)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, under whose action the string takes a given form <math id="I2.i1.p1.m2" class="ltx_Math" alttext="Y=Y(x)" display="inline"><mrow><mi>Y</mi><mo>=</mo><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Thus, we arrive to the integral equation of the first kind</p>
+<table id="S4.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E2.m1" class="ltx_Math" alttext="Y(x)=\int_{0}^{l}G(x,\xi)p(\xi)d\xi" display="block"><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">respect to the unknown function <math id="I2.i1.p1.m3" class="ltx_Math" alttext="p(\xi)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">2.</span> 
+<div id="I2.i2.p1" class="ltx_para">
+<p class="ltx_p">Let us suppose that on the string acts an exciter force with density, at <math id="I2.i2.p1.m1" class="ltx_Math" alttext="x=\xi" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>ξ</mi></mrow></math> and instant <math id="I2.i2.p1.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>, given by <math id="I2.i2.p1.m3" class="ltx_Math" alttext="p(\xi,t):=p(\xi)\sin\omega t" display="inline"><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow></math>, being <math id="I2.i2.p1.m4" class="ltx_Math" alttext="\omega&gt;0" display="inline"><mrow><mi>ω</mi><mo>&gt;</mo><mn>0</mn></mrow></math> the angular frequency of the exciter force. Under its action, the string is putting in motion. Further, we will assume that the string’s transverse oscillations are periodic, described by the equation</p>
+<table id="S4.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex5.m1" class="ltx_Math" alttext="y(x,t)=Y(x)\sin\omega t." display="block"><mrow><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Denoting by <math id="I2.i2.p1.m5" class="ltx_Math" alttext="\rho(\xi)" display="inline"><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></math> the mass linear density at <math id="I2.i2.p1.m6" class="ltx_Math" alttext="x=\xi" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>ξ</mi></mrow></math>, from the <span class="ltx_text" style="font-size:90%;">D</span>’Alambert principle <span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>i.e.
+
+<span id="S4.Ex6" class="ltx_equation ltx_eqn_table">
+
+<span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex6.m1" class="ltx_Math" alttext="\sum F_{y}d\xi+\left\{-\rho(\xi)\frac{\partial^{2}y}{\partial t^{2}}(\xi,t)d%
+\xi\right\}\equiv 0," display="block"><mrow><mrow><mrow><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><msub><mi>F</mi><mi>y</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo>+</mo><mrow><mo>{</mo><mrow><mo>-</mo><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>y</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo>}</mo></mrow></mrow><mo>≡</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span></span>
+</span>
+a <em class="ltx_emph ltx_font_italic">dynamical equilibrium</em> where the second term is the involved <em class="ltx_emph ltx_font_italic">inertia force</em>. It is very important realize that in order to represents the solution <math id="I2.i2.p1.m7" class="ltx_Math" alttext="y(x,t)" display="inline"><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> through an integral equation, it is necessary to explicit the exciter force <math id="I2.i2.p1.m8" class="ltx_Math" alttext="p(\xi)\sin\omega t" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></math>. Thus, <math id="I2.i2.p1.m9" class="ltx_Math" alttext="\sum F_{y}=\sum F^{\prime}_{y}+p(\xi)\sin\omega t" display="inline"><mrow><mrow><mo largeop="true" symmetric="true">∑</mo><msub><mi>F</mi><mi>y</mi></msub></mrow><mo>=</mo><mrow><mrow><mo largeop="true" symmetric="true">∑</mo><msubsup><mi>F</mi><mi>y</mi><mo>′</mo></msubsup></mrow><mo>+</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow></math>. One also realizes that <math id="I2.i2.p1.m10" class="ltx_Math" alttext="\partial^{2}y/\partial t^{2}" display="inline"><mrow><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>y</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mrow></math> may be obtained from the assumption above expressed for <math id="I2.i2.p1.m11" class="ltx_Math" alttext="x=\xi" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>ξ</mi></mrow></math>. Hence the solution becomes
+
+<span id="S4.Ex7" class="ltx_equation ltx_eqn_table">
+
+<span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex7.m1" class="ltx_Math" alttext="y(x,t)=Y(x)\sin\omega t=\int_{0}^{l}G(x,\xi)\left\{-\sum F^{\prime}_{y}\right%
+\}d\xi." display="block"><mrow><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>{</mo><mrow><mo>-</mo><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><msubsup><mi>F</mi><mi>y</mi><mo>′</mo></msubsup></mrow></mrow><mo>}</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span></span>
+</span>
+Minus sign, above placed, it is conventional as the string’s tension balance (because the tension applied at the ends of string’s free diagram) is assumed upwards and, obviously, <math id="I2.i2.p1.m12" class="ltx_Math" alttext="y(x,t)" display="inline"><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> is changing periodically of sign. </span></span></span>
+applied to the string’s segment <math id="I2.i2.p1.m13" class="ltx_Math" alttext="(\xi,\xi+\delta\xi)" display="inline"><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo>,</mo><mrow><mi>ξ</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></math>, at instant <math id="I2.i2.p1.m14" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>, we have</p>
+<table id="S4.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex8.m1" class="ltx_Math" alttext="y(x,t)=Y(x)\sin\omega t=\int_{0}^{l}G(x,\xi)\{p(\xi)\sin\omega t+\omega^{2}%
+\rho(\xi)Y(\xi)\sin\omega t\}d\xi." display="block"><mrow><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>⁢</mo><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Simplifying by <math id="I2.i2.p1.m15" class="ltx_Math" alttext="\sin\omega t" display="inline"><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></math> and defining</p>
+<table id="S4.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex9.m1" class="ltx_Math" alttext="f(x):=\int_{0}^{l}G(x,\xi)p(\xi)d\xi,\qquad K(x,\xi):=\rho(\xi)G(x,\xi),\qquad%
+\lambda:=\omega^{2}," display="block"><mrow><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow><mo rspace="22.5pt">,</mo><mrow><mrow><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="22.5pt">,</mo><mrow><mi>λ</mi><mo>:=</mo><msup><mi>ω</mi><mn>2</mn></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">we get
+</p>
+<table id="S4.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E3.m1" class="ltx_Math" alttext="Y(x)=\lambda\int_{0}^{l}K(x,\xi)Y(\xi)d\xi+f(x)." display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>λ</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Supposing known the function <math id="S4.p1.m1" class="ltx_Math" alttext="p(\xi)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></math> and, therefore <math id="S4.p1.m2" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>, we arrive on this manner to a Fredholm’s integral equation of the second kind for determination of the function <math id="S4.p1.m3" class="ltx_Math" alttext="Y(x)" display="inline"><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>. Note that, by virtue of the definition of <math id="S4.p1.m4" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>, we have <math id="S4.p1.m5" class="ltx_Math" alttext="f(0)=f(l)=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>l</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. 
+<br class="ltx_break">Wether the density <math id="S4.p1.m6" class="ltx_Math" alttext="\rho(\xi)" display="inline"><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></math> is constant and <math id="S4.p1.m7" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is <em class="ltx_emph ltx_font_italic">regular</em> <span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">4</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">4</sup>i.e. <math id="S4.p1.m8" class="ltx_Math" alttext="f(x)\in\mathcal{C}^{2}[0\,,l]" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">𝒞</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mpadded width="+1.7pt"><mn>0</mn></mpadded><mo>,</mo><mi>l</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></math>.</span></span></span>, it is not too hard solving this integral equation. In fact, from (1) and the definition of the symmetric kernel <math id="S4.p1.m9" class="ltx_Math" alttext="K(x,\xi)" display="inline"><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, results</p>
+<table id="S4.Ex10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex10.m1" class="ltx_Math" alttext="Y(x)=\omega^{2}\rho\int_{0}^{x}\frac{(l-x)\xi}{T_{0}l}Y(\xi)d\xi+\omega^{2}%
+\rho\int_{x}^{l}\frac{x(l-\xi)}{T_{0}l}Y(\xi)d\xi+f(x)" display="block"><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>⁢</mo><mi>ρ</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ξ</mi></mrow><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>⁢</mo><mi>l</mi></mrow></mfrac><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>⁢</mo><mi>ρ</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>x</mi><mi>l</mi></msubsup><mrow><mfrac><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>⁢</mo><mi>l</mi></mrow></mfrac><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">or</p>
+<table id="S4.Ex11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex11.m1" class="ltx_Math" alttext="Y(x)=\frac{\omega^{2}c}{l}(l-x)\int_{0}^{x}\xi Y(\xi)d\xi+\frac{\omega^{2}cx}{%
+l}\int_{x}^{l}(l-\xi)Y(\xi)d\xi+f(x)," display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>⁢</mo><mi>c</mi></mrow><mi>l</mi></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mi>ξ</mi><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mfrac><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>x</mi></mrow><mi>l</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>x</mi><mi>l</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Where <math id="S4.p1.m10" class="ltx_Math" alttext="c=\rho/T_{0}" display="inline"><mrow><mi>c</mi><mo>=</mo><mrow><mi>ρ</mi><mo>/</mo><msub><mi>T</mi><mn>0</mn></msub></mrow></mrow></math>. By twice differentiation respect to <math id="S4.p1.m11" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, we obtain (by application of Liebnitz’s rule)</p>
+<table id="S4.E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E4.m1" class="ltx_Math" alttext="Y^{\prime\prime}(x)=-\omega^{2}cY(x)+f^{\prime\prime}(x)." display="block"><mrow><mrow><mrow><msup><mi>Y</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>-</mo><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr>
+</table>
+<p class="ltx_p">On the other hand, it can be shown that any solution of the differential equation (4), which vanishes for <math id="S4.p1.m12" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="S4.p1.m13" class="ltx_Math" alttext="x=l" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>l</mi></mrow></math>, it is also solution of the integral equation (3). To see this, we multiply the equation</p>
+<table id="S4.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex12.m1" class="ltx_Math" alttext="Y^{\prime\prime}(\xi)=-\omega^{2}cY(\xi)+f^{\prime\prime}(\xi)" display="block"><mrow><mrow><msup><mi>Y</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>-</mo><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">by <math id="S4.p1.m14" class="ltx_Math" alttext="-T_{0}G(x,\xi)" display="inline"><mrow><mo>-</mo><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>⁢</mo><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and integrating respect to <math id="S4.p1.m15" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math> from <math id="S4.p1.m16" class="ltx_Math" alttext="\xi=0" display="inline"><mrow><mi>ξ</mi><mo>=</mo><mn>0</mn></mrow></math> to <math id="S4.p1.m17" class="ltx_Math" alttext="\xi=l" display="inline"><mrow><mi>ξ</mi><mo>=</mo><mi>l</mi></mrow></math>. Then (3) is obtained since, integrating by parts, it is easily shown that</p>
+<table id="S4.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex13.m1" class="ltx_Math" alttext="\int_{0}^{l}T_{0}G(x,\xi)U^{\prime\prime}(\xi)d\xi=-U(x)," display="block"><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>⁢</mo><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>U</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S4.p1.m18" class="ltx_Math" alttext="U(x)" display="inline"><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is any regular function, such that <math id="S4.p1.m19" class="ltx_Math" alttext="U(0)=U(l)=0" display="inline"><mrow><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>l</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+From the theory on ordinary differential equations, the general solution of (4) has the form</p>
+<table id="S4.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex14.m1" class="ltx_Math" alttext="Y(x)=C_{1}\sin\mu x+C_{2}\cos\mu x+\frac{1}{\mu}\int_{0}^{x}f^{\prime\prime}(%
+\xi)\sin\mu(x-\xi)d\xi," display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>μ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mo>+</mo><mrow><msub><mi>C</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>μ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mi>μ</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Where <math id="S4.p1.m20" class="ltx_Math" alttext="\mu=\omega\sqrt{c}" display="inline"><mrow><mi>μ</mi><mo>=</mo><mrow><mi>ω</mi><mo>⁢</mo><msqrt><mi>c</mi></msqrt></mrow></mrow></math> and <math id="S4.p1.m21" class="ltx_Math" alttext="C_{1},C_{2}" display="inline"><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>,</mo><msub><mi>C</mi><mn>2</mn></msub></mrow></math> are arbitrary constants. From (1) and (3) is deduced that <math id="S4.p1.m22" class="ltx_Math" alttext="Y(0)=Y(l)=0" display="inline"><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>l</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. By making use of these conditions, and whenever <math id="S4.p1.m23" class="ltx_Math" alttext="\sin\mu l\neq 0" display="inline"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>μ</mi><mo>⁢</mo><mi>l</mi></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math>, we have</p>
+<table id="S4.E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E5.m1" class="ltx_Math" alttext="Y(x)=-\frac{1}{\mu}\frac{\sin\mu x}{\sin\mu l}\int_{0}^{l}f^{\prime\prime}(\xi%
+)\sin\mu(l-\xi)d\xi+\frac{1}{\mu}\int_{0}^{x}f^{\prime\prime}(\xi)\sin\mu(x-%
+\xi)d\xi." display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mi>μ</mi></mfrac><mo>⁢</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>μ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>μ</mi><mo>⁢</mo><mi>l</mi></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mi>μ</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr>
+</table>
+<p class="ltx_p">In this case, (3) possesses a unique solution for any function <math id="S4.p1.m24" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>, whenever it be regular and <math id="S4.p1.m25" class="ltx_Math" alttext="f(0)=f(l)=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>l</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. 
+<br class="ltx_break">It can be shown that for the existence of the solution of integral equation (3) is sufficient, if <math id="S4.p1.m26" class="ltx_Math" alttext="\sin\mu l\neq 0" display="inline"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>μ</mi><mo>⁢</mo><mi>l</mi></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math>, that the function <math id="S4.p1.m27" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> be continuous, so that the condition about existence and, with more reason, about that <math id="S4.p1.m28" class="ltx_Math" alttext="f^{\prime\prime}(x)" display="inline"><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> be continuous, is superfluous. On the contrary, condition <math id="S4.p1.m29" class="ltx_Math" alttext="\sin\mu l\neq 0" display="inline"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>μ</mi><mo>⁢</mo><mi>l</mi></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math> is absolutely essential in order to that the integral equation has solution for any function <math id="S4.p1.m30" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>; moreover, for all function <math id="S4.p1.m31" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> differentiable any number of times. 
+<br class="ltx_break">In the case that <math id="S4.p1.m32" class="ltx_Math" alttext="\sin\mu l=0" display="inline"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>μ</mi><mo>⁢</mo><mi>l</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, then</p>
+<table id="S4.E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E6.m1" class="ltx_Math" alttext="\mu=\frac{k\pi}{l}\,,\qquad\omega=\frac{k\pi}{l\sqrt{c}}\,,\qquad\lambda=\frac%
+{k^{2}\pi^{2}}{l^{2}c}\,," display="block"><mrow><mrow><mrow><mi>μ</mi><mo>=</mo><mpadded width="+1.7pt"><mfrac><mrow><mi>k</mi><mo>⁢</mo><mi>π</mi></mrow><mi>l</mi></mfrac></mpadded></mrow><mo rspace="22.5pt">,</mo><mrow><mrow><mi>ω</mi><mo>=</mo><mpadded width="+1.7pt"><mfrac><mrow><mi>k</mi><mo>⁢</mo><mi>π</mi></mrow><mrow><mi>l</mi><mo>⁢</mo><msqrt><mi>c</mi></msqrt></mrow></mfrac></mpadded></mrow><mo rspace="22.5pt">,</mo><mrow><mi>λ</mi><mo>=</mo><mpadded width="+1.7pt"><mfrac><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>π</mi><mn>2</mn></msup></mrow><mrow><msup><mi>l</mi><mn>2</mn></msup><mo>⁢</mo><mi>c</mi></mrow></mfrac></mpadded></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S4.p1.m33" class="ltx_Math" alttext="k\in\mathbb{Z}" display="inline"><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></math>. The values of <math id="S4.p1.m34" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math>, given in <math id="S4.p1.m35" class="ltx_Math" alttext="(6)_{3}" display="inline"><msub><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mn>3</mn></msub></math> for <math id="S4.p1.m36" class="ltx_Math" alttext="k\in\mathbb{Z}^{+}" display="inline"><mrow><mi>k</mi><mo>∈</mo><msup><mi>ℤ</mi><mo>+</mo></msup></mrow></math>, are the eigenvalues of integral equation (3), and the corresponding values of <math id="S4.p1.m37" class="ltx_Math" alttext="\omega" display="inline"><mi>ω</mi></math> in <math id="S4.p1.m38" class="ltx_Math" alttext="(6)_{2}" display="inline"><msub><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msub></math>, are the <em class="ltx_emph ltx_font_italic">eigenfrequencies</em> of string’s oscillations. From (5) and <math id="S4.p1.m39" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> being regular, as <math id="S4.p1.m40" class="ltx_Math" alttext="\sin\mu l=0" display="inline"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>μ</mi><mo>⁢</mo><mi>l</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> one realizes that the integral equation (3) has solution only if</p>
+<table id="S4.E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E7.m1" class="ltx_Math" alttext="\int_{0}^{l}f^{\prime\prime}(\xi)\sin\mu(l-\xi)d\xi=0." display="block"><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(7)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Integrating by parts and by making use of the fact that <math id="S4.p1.m41" class="ltx_Math" alttext="\sin\mu(l-\xi)=0" display="inline"><mrow><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> and <math id="S4.p1.m42" class="ltx_Math" alttext="f(\xi)=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> for <math id="S4.p1.m43" class="ltx_Math" alttext="\xi=0" display="inline"><mrow><mi>ξ</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="S4.p1.m44" class="ltx_Math" alttext="\xi=l" display="inline"><mrow><mi>ξ</mi><mo>=</mo><mi>l</mi></mrow></math>, condition (7) becomes <span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">5</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">5</sup>From (8) one sees that indeed, condition for <math id="S4.p1.m45" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>, may be weakened to <math id="S4.p1.m46" class="ltx_Math" alttext="f(x)\in\mathcal{PC}[0\,,l]" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mpadded width="+1.7pt"><mn>0</mn></mpadded><mo>,</mo><mi>l</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></math>.</span></span></span></p>
+<table id="S4.E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E8.m1" class="ltx_Math" alttext="\int_{0}^{l}f(\xi)\sin\mu(l-\xi)d\xi=0." display="block"><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>-</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(8)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Reciprocally, it is easy to show that condition (8) is also sufficient for the existence of a solution of integral equation (3) for any <math id="S4.p1.m47" class="ltx_Math" alttext="\mu" display="inline"><mi>μ</mi></math> for which <math id="S4.p1.m48" class="ltx_Math" alttext="\sin\mu l=0" display="inline"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>μ</mi><mo>⁢</mo><mi>l</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. In particular, condition (8) is satisfied if <math id="S4.p1.m49" class="ltx_Math" alttext="f(x)\equiv 0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mn>0</mn></mrow></math>. Then, the integral equation (3) and the differential equation (4) become homogeneous. Consequently, all the solutions of the homogeneous differential equation</p>
+<table id="S4.Ex15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex15.m1" class="ltx_Math" alttext="Y^{\prime\prime}(\xi)+\omega^{2}cY(\xi)=0" display="block"><mrow><mrow><mrow><msup><mi>Y</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">vanish for <math id="S4.p1.m50" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="S4.p1.m51" class="ltx_Math" alttext="x=l" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>l</mi></mrow></math> and therefore, all the solutions of the homogeneous integral equation (indeed a Fredholm’s integral of the first kind)</p>
+<table id="S4.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex16.m1" class="ltx_Math" alttext="Y(x)=\lambda\int_{0}^{l}K(x,\xi)Y(\xi)d\xi" display="block"><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>l</mi></msubsup><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ξ</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">are given by</p>
+<table id="S4.E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E9.m1" class="ltx_Math" alttext="Y(x)\,\,\mapsto\,\,Y_{k}(x)=C\sin\mu_{k}x," display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="5.8pt" stretchy="false">)</mo></mrow></mrow><mo rspace="5.8pt">↦</mo><mrow><msub><mi>Y</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><msub><mi>μ</mi><mi>k</mi></msub><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(9)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Where <math id="S4.p1.m52" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is an arbitrary constant and <math id="S4.p1.m53" class="ltx_Math" alttext="\mu_{k}" display="inline"><msub><mi>μ</mi><mi>k</mi></msub></math> is one of the numbers <math id="S4.p1.m54" class="ltx_Math" alttext="(6)_{1}" display="inline"><msub><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mn>1</mn></msub></math>. Equation (9) give us the amplitude, at the point <math id="S4.p1.m55" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, of the string’s free vibrations, that is</p>
+<table id="S4.E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E10.m1" class="ltx_Math" alttext="y_{k}(x,t)=C\sin\mu_{k}x\sin\omega_{k}t," display="block"><mrow><mrow><mrow><msub><mi>y</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><msub><mi>μ</mi><mi>k</mi></msub><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><msub><mi>ω</mi><mi>k</mi></msub><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(10)</span></td>
+</tr>
+</table>
+<p class="ltx_p">which takes place without the action of external exciter forces. As it has been seen so far, these oscillations do not take place with any frequency, but solely of one of the given in <math id="S4.p1.m56" class="ltx_Math" alttext="(6)_{2}" display="inline"><msub><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msub></math> for <math id="S4.p1.m57" class="ltx_Math" alttext="k\in\mathbb{Z}^{+}" display="inline"><mrow><mi>k</mi><mo>∈</mo><msup><mi>ℤ</mi><mo>+</mo></msup></mrow></math>. 
+<br class="ltx_break">As it is shown in (5), if condition (7) (or equivalently (8)) does not satisfied, then the amplitude <math id="S4.p1.m58" class="ltx_Math" alttext="Y(x)" display="inline"><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> of string’s periodic oscillations, at the point <math id="S4.p1.m59" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, will increase indefinitely as the exciter’s force frequency <math id="S4.p1.m60" class="ltx_Math" alttext="\omega" display="inline"><mi>ω</mi></math> yields to one of the string’s eigenfrequencies (or string’s natural frequencies). At limit, as these frequencies coincide, begins the <em class="ltx_emph ltx_font_italic">resonance</em>. Thus, in general, there are not periodic oscillations on the string. Accordingly, in general, there is not solution for the non-homogeneous integral equation (3), as <math id="S4.p1.m61" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> is one of the eigenvalues of this equation. 
+<br class="ltx_break">A more elaborated discussion (which takes into account string’s cross section properties), not for Hookean elastic but Maxwellian viscoelastic string’s model, is given in <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib9" title="" class="ltx_ref">9</a>]</cite>.</p>
+</div>
+</section>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul class="ltx_biblist">
+      
+<li id="bib.bib1" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">1</span>
+        
+<span class="ltx_bibblock">
+C. Truesdell, <span class="ltx_text ltx_font_italic">Essays in the History of Mechanics</span>, pp. 108-110, Springer-Verlag, Berlin-Heidelberg-New York, 1968.
+
+</span>
+      </li>
+      
+<li id="bib.bib2" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">2</span>
+        
+<span class="ltx_bibblock">
+L. Euler, <span class="ltx_text ltx_font_italic">Mechanica sive motus scientis analytice exposita</span>, 2 tomes=<span class="ltx_text ltx_font_italic">Opera Omnia II</span>, 1 and 2, Petropoli, 1736.
+
+</span>
+      </li>
+      
+<li id="bib.bib3" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">3</span>
+        
+<span class="ltx_bibblock">
+J. L. <span class="ltx_text" style="font-size:90%;">D</span>’Alembert, <span class="ltx_text ltx_font_italic">Sur la Corde Vibrante</span>, Memoires de l’Académic des Sciences, 216ff., Berlin, 1747.
+
+</span>
+      </li>
+      
+<li id="bib.bib4" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">4</span>
+        
+<span class="ltx_bibblock">
+G. F. Carrier, <span class="ltx_text ltx_font_italic">On the non-linear vibration problem of the elastic String</span>, Quart. Appl. Math., <math id="bib.bib4.m1" class="ltx_Math" alttext="\underline{3}" display="inline"><munder accentunder="true"><mn>3</mn><mo>¯</mo></munder></math>, 157, 1945.
+
+</span>
+      </li>
+      
+<li id="bib.bib5" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">5</span>
+        
+<span class="ltx_bibblock">
+E. Fermi, J. R. Pasta, S. Ulam, <span class="ltx_text ltx_font_italic">Studies of Non-linear Problems I</span>, Los Alamos, Report <math id="bib.bib5.m1" class="ltx_Math" alttext="N^{o}" display="inline"><msup><mi>N</mi><mi>o</mi></msup></math> 1940, May 1955. (Unpublished)
+
+</span>
+      </li>
+      
+<li id="bib.bib6" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">6</span>
+        
+<span class="ltx_bibblock">
+N. J. Zabusky, <span class="ltx_text ltx_font_italic">Exact Solution for the Vibrations of a Nonlinear Continuous Model String</span>, J. Math., Phys., <math id="bib.bib6.m1" class="ltx_Math" alttext="\underline{3}" display="inline"><munder accentunder="true"><mn>3</mn><mo>¯</mo></munder></math>, 1028, 1962.
+
+</span>
+      </li>
+      
+<li id="bib.bib7" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">7</span>
+        
+<span class="ltx_bibblock">
+G. F. B. Riemann, <span class="ltx_text ltx_font_italic">Uber die fortpflanzung ebener Luftwellen von endlicher Schwingungsweite</span>, Abhandl., Konigl.Ges.Wiss. Göttingen, <math id="bib.bib7.m1" class="ltx_Math" alttext="\underline{8}" display="inline"><munder accentunder="true"><mn>8</mn><mo>¯</mo></munder></math>, 43, 1860.
+
+</span>
+      </li>
+      
+<li id="bib.bib8" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">8</span>
+        
+<span class="ltx_bibblock">
+I. G. Petrovski, <span class="ltx_text ltx_font_italic">Lecciones de Teoría de las Ecuaciones Integrales</span>, 2da. ed., Trad. de la 3era. ed. Rusa, Edit. MIR, Moscú, 1976.
+
+</span>
+      </li>
+      
+<li id="bib.bib9" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">9</span>
+        
+<span class="ltx_bibblock">
+P. Fernández, <span class="ltx_text ltx_font_italic">Solución Exacta para las Vibraciones transversales en un modelo de Cable No-Hookeano</span>, Trabajo de Ascenso a Prof. Agregado, UCV, Caracas, 1985.
+
+</span>
+      </li>
+    
+</ul>
+</section>
+<div id="p2" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">vibrating string</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">VibratingString</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 17:25:19</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 17:25:19</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">perucho (2192)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">perucho (2192)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">11</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">perucho (2192)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 45B05</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 21:33:55 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
